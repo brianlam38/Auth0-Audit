@@ -1,7 +1,7 @@
 # Auth0 Security Audit
 
 ### What
-A tool to perform a security audit on Auth0 configuration for a set of clients in a tenant.
+A tool to audit the security of your Auth0 configuration and provide recommendations.
 
 ### How
 
