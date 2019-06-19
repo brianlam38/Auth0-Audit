@@ -1,0 +1,10 @@
+{
+    "check_grant_implicitnotused": "Grant type 'Implicit Grant' should not be used.",
+    "check_grant_refreshnotused": "Grant type 'Refresh Token Grant' should not be used, other than for application type 'Native' i.e. mobile applications.",
+    "check_apptype_webapphasauthcode": "Application type 'Regular Web Application' should use grant type 'Authorization Code Grant'.",
+    "check_apptype_m2mhasclientcred": "Application type 'Machine to Machine' should use grant type 'Client Credentials Grant'.",
+    "check_apptype_thirdpartynotusepassword": "Application type 'Third-Party Application' MUST not use the grant type 'Resource Owner Password Grant'.",
+    "check_oidcconformant": "Application should be 'OIDC Conformant' as a more secure authentication protocol over SAML or WS-Fed.",
+    "check_apptype_genericnotused": "Application type 'Generic' should be changed to a specific application type i.e. Web-App, SPA, M2M, Native",
+    "check_algorithm": "Signing algorithm should be 'RS256'."
+}
