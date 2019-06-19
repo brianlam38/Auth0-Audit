@@ -1,0 +1,64 @@
+[
+    {
+        "name": "TEST 1: SECURE CONFIG - CONTROL",
+        "app_type": "regular_web", 
+        "is_first_party": true, 
+        "grant_types": [
+            "authorization_code"
+        ], 
+        "jwt_configuration": {
+            "alg": "RS256"
+        }, 
+        "oidc_conformant": true
+    },
+    {
+        "name": "TEST 2: INSECURE CONFIG - SIGNING ALGORITHM",
+        "app_type": "regular_web", 
+        "is_first_party": true, 
+        "grant_types": [
+            "authorization_code"
+        ], 
+        "jwt_configuration": {
+            "alg": "HS256"
+        }, 
+        "oidc_conformant": true
+    },
+    {
+        "name": "TEST 3: INSECURE CONFIG - 3RD-PARTY USING RESOURCE OWNER PASSWORD",
+        "app_type": "regular_web", 
+        "is_first_party": false, 
+        "grant_types": [
+            "authorization_code",
+            "password"
+        ], 
+        "jwt_configuration": {
+            "alg": "RS256"
+        },
+        "oidc_conformant": true
+    },
+    {
+        "name": "TEST 4: INSECURE CONFIG - USE OF IMPLICIT GRANT",
+        "app_type": "regular_web", 
+        "is_first_party": true, 
+        "grant_types": [
+            "authorization_code",
+            "implicit"
+        ], 
+        "jwt_configuration": {
+            "alg": "RS256"
+        },
+        "oidc_conformant": true
+    },
+    {
+        "name": "TEST 5: INSECURE CONFIG - NON-OIDC CONFORMANT",
+        "app_type": "regular_web", 
+        "is_first_party": true, 
+        "grant_types": [
+            "authorization_code"
+        ], 
+        "jwt_configuration": {
+            "alg": "RS256"
+        },
+        "oidc_conformant": false
+    }
+]
